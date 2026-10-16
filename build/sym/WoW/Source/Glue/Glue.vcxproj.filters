@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\WoW\Source\Glue\CGlueLoading.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\WoW\Source\Glue\CGlueMgr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\WoW\Source\Glue\CSimpleModelFFX.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\WoW\Source\Glue\CSimpleModelFFX_Scripts.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\WoW\Source\Glue\CWOWClientStatus.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\WoW\Source\Glue\CharacterCreation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\WoW\Source\Glue\CharacterCreation_Scripts.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\WoW\Source\Glue\CharacterSelection.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\WoW\Source\Glue\CharacterSelectionDisplay.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\WoW\Source\Glue\CharacterSelection_Scripts.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\WoW\Source\Glue\ComponentData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\WoW\Source\Glue\GlueMgr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\WoW\Source\Glue\GlueScriptEvents_Scripts.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\WoW\Source\Glue\PatchDownloadGlue.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\WoW\Source\Glue\RealmList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\WoW\Source\Glue\RealmList_Scripts.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\WoW\Source\Glue\ScanDLLGlue.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\WoW\Source\Glue\SurveyDownloadGlue.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\WoW\Source\Glue\Win64\PatchDownloadGlue.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\WoW\Source\Glue\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{6BA50A9B-49D0-351A-A8AA-B1134B15E4DB}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

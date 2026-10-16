@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\WoW\Source\WowServices\BattlenetLogin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\WoW\Source\WowServices\BigInteger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\WoW\Source\WowServices\Grunt.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\WoW\Source\WowServices\GruntLogin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\WoW\Source\WowServices\HMAC.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\WoW\Source\WowServices\Login.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\WoW\Source\WowServices\PatchFiles.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\WoW\Source\WowServices\RealmConnection.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\WoW\Source\WowServices\SRP6_Client.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\WoW\Source\WowServices\SRP6_Random.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\WoW\Source\WowServices\TSFixedArray.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\WoW\Source\WowServices\WDataStore.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\WoW\Source\WowServices\Win32\WowConnection.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\WoW\Source\WowServices\Win32\WowConnectionNet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\WoW\Source\WowServices\Win64\BattlenetLogin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\WoW\Source\WowServices\Win64\WowConnection.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\WoW\Source\WowServices\Win64\WowConnectionNet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\WoW\Source\WowServices\WowConnection.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\WoW\Source\WowServices\WowConnectionNet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\WoW\Source\WowServices\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{6BA50A9B-49D0-351A-A8AA-B1134B15E4DB}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

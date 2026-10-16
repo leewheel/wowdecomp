@@ -1,0 +1,625 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1F64C264-2369-3164-8705-807BA5BFDB8A}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>Wow</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\bin\Win\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Wow.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Wow64</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\bin\Win\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Wow.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Wow64</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\bin\Win\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Wow.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Wow64</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\bin\Win\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Wow.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Wow64</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\ThirdParty\zlib\contrib\blast;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\ThirdParty\lzma;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\ThirdParty\zlib;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\ThirdParty\DivxDecoder;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\ThirdParty\freetype\include;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\Engine\Source\lua-5.1\src;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\ThirdParty\expat\lib;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\Engine\Source\SoundEngine\fmodex\src;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\ThirdParty\bzip2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;WOWDECOMP_ARCH_64=1;NOMINMAX;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_WARNINGS;DISABLE_SIGNATURE_CHECKS=1;_STATIC;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;WOWDECOMP_ARCH_64=1;NOMINMAX;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_WARNINGS;DISABLE_SIGNATURE_CHECKS=1;_STATIC;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\ThirdParty\zlib\contrib\blast;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\ThirdParty\lzma;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\ThirdParty\zlib;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\ThirdParty\DivxDecoder;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\ThirdParty\freetype\include;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\Engine\Source\lua-5.1\src;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\ThirdParty\expat\lib;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\Engine\Source\SoundEngine\fmodex\src;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\ThirdParty\bzip2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\ThirdParty\zlib\contrib\blast;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\ThirdParty\lzma;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\ThirdParty\zlib;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\ThirdParty\DivxDecoder;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\ThirdParty\freetype\include;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\Engine\Source\lua-5.1\src;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\ThirdParty\expat\lib;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\Engine\Source\SoundEngine\fmodex\src;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\ThirdParty\bzip2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\lib\Debug\BLPFile.lib;..\..\lib\Debug\Base.lib;..\..\lib\Debug\BlizzardCore.lib;..\..\lib\Debug\ComSat.lib;..\..\lib\Debug\ConsoleBase.lib;..\..\lib\Debug\Event.lib;..\..\lib\Debug\FFX.lib;..\..\lib\Debug\Frame.lib;..\..\lib\Debug\FrameScript.lib;..\..\lib\Debug\lua.lib;..\..\lib\Debug\FrameXML.lib;..\..\lib\Debug\Gx.lib;..\..\lib\Debug\Gxu.lib;..\..\lib\Debug\Images.lib;..\..\lib\Debug\Model2.lib;..\..\lib\Debug\Os.lib;..\..\lib\Debug\Scrn.lib;..\..\lib\Debug\Services.lib;..\..\lib\Debug\ShaderEffect.lib;..\..\lib\Debug\Tempest.lib;..\..\lib\Debug\SoundEngine.lib;..\..\lib\Debug\SteelseriesMouse.lib;..\..\lib\Debug\Storm.lib;..\..\lib\Debug\WoWCommon.lib;..\..\lib\Debug\Battlenet.lib;..\..\lib\Debug\Console.lib;..\..\lib\Debug\ConsoleDevice.lib;..\..\lib\Debug\DB.lib;..\..\lib\Debug\Game.lib;..\..\lib\Debug\Glue.lib;..\..\lib\Debug\LiquidSystem.lib;..\..\lib\Debug\Magic.lib;..\..\lib\Debug\Minigame.lib;..\..\lib\Debug\Net.lib;..\..\lib\Debug\Object.lib;..\..\lib\Debug\ObjectAlloc.lib;..\..\lib\Debug\ObjectMgrClient.lib;..\..\lib\Debug\SoundInterface.lib;..\..\lib\Debug\UIUtil.lib;..\..\lib\Debug\Ui.lib;..\..\lib\Debug\WorldClient.lib;..\..\lib\Debug\WowServices.lib;..\..\lib\Debug\WowSvcs.lib;..\..\lib\Debug\lzma.lib;..\..\lib\Debug\XvidDecoder.lib;..\..\lib\Debug\expat.lib;d3d9.lib;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\ThirdParty\nvapi\amd64\nvapi64.lib;opengl32.lib;..\..\lib\Debug\jpeg.lib;imm32.lib;wininet.lib;dinput8.lib;dxguid.lib;version.lib;..\..\lib\Debug\fmodex.lib;winmm.lib;msacm32.lib;hid.lib;setupapi.lib;..\..\lib\Debug\blast.lib;..\..\lib\Debug\zlib.lib;..\..\lib\Debug\bzip2.lib;..\..\lib\Debug\freetype.lib;..\..\lib\Debug\pcreposix.lib;..\..\lib\Debug\pcre.lib;ws2_32.lib;wsock32.lib;..\..\lib\Debug\lgLcd.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <EntryPointSymbol>start</EntryPointSymbol>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <GenerateMapFile>true</GenerateMapFile>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>D:/WoWClient/PLUS PB Client/WoWDecomp/wowdecomp/build/sym/lib/Debug/Wow64.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <MapExports>true</MapExports>
+      <ProgramDataBaseFile>D:/WoWClient/PLUS PB Client/WoWDecomp/wowdecomp/bin/Win/Wow64.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\ThirdParty\zlib\contrib\blast;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\ThirdParty\lzma;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\ThirdParty\zlib;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\ThirdParty\DivxDecoder;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\ThirdParty\freetype\include;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\Engine\Source\lua-5.1\src;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\ThirdParty\expat\lib;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\Engine\Source\SoundEngine\fmodex\src;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\ThirdParty\bzip2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;WOWDECOMP_ARCH_64=1;NOMINMAX;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_WARNINGS;DISABLE_SIGNATURE_CHECKS=1;_STATIC;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;WOWDECOMP_ARCH_64=1;NOMINMAX;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_WARNINGS;DISABLE_SIGNATURE_CHECKS=1;_STATIC;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\ThirdParty\zlib\contrib\blast;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\ThirdParty\lzma;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\ThirdParty\zlib;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\ThirdParty\DivxDecoder;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\ThirdParty\freetype\include;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\Engine\Source\lua-5.1\src;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\ThirdParty\expat\lib;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\Engine\Source\SoundEngine\fmodex\src;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\ThirdParty\bzip2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\ThirdParty\zlib\contrib\blast;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\ThirdParty\lzma;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\ThirdParty\zlib;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\ThirdParty\DivxDecoder;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\ThirdParty\freetype\include;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\Engine\Source\lua-5.1\src;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\ThirdParty\expat\lib;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\Engine\Source\SoundEngine\fmodex\src;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\ThirdParty\bzip2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\lib\Release\BLPFile.lib;..\..\lib\Release\Base.lib;..\..\lib\Release\BlizzardCore.lib;..\..\lib\Release\ComSat.lib;..\..\lib\Release\ConsoleBase.lib;..\..\lib\Release\Event.lib;..\..\lib\Release\FFX.lib;..\..\lib\Release\Frame.lib;..\..\lib\Release\FrameScript.lib;..\..\lib\Release\lua.lib;..\..\lib\Release\FrameXML.lib;..\..\lib\Release\Gx.lib;..\..\lib\Release\Gxu.lib;..\..\lib\Release\Images.lib;..\..\lib\Release\Model2.lib;..\..\lib\Release\Os.lib;..\..\lib\Release\Scrn.lib;..\..\lib\Release\Services.lib;..\..\lib\Release\ShaderEffect.lib;..\..\lib\Release\Tempest.lib;..\..\lib\Release\SoundEngine.lib;..\..\lib\Release\SteelseriesMouse.lib;..\..\lib\Release\Storm.lib;..\..\lib\Release\WoWCommon.lib;..\..\lib\Release\Battlenet.lib;..\..\lib\Release\Console.lib;..\..\lib\Release\ConsoleDevice.lib;..\..\lib\Release\DB.lib;..\..\lib\Release\Game.lib;..\..\lib\Release\Glue.lib;..\..\lib\Release\LiquidSystem.lib;..\..\lib\Release\Magic.lib;..\..\lib\Release\Minigame.lib;..\..\lib\Release\Net.lib;..\..\lib\Release\Object.lib;..\..\lib\Release\ObjectAlloc.lib;..\..\lib\Release\ObjectMgrClient.lib;..\..\lib\Release\SoundInterface.lib;..\..\lib\Release\UIUtil.lib;..\..\lib\Release\Ui.lib;..\..\lib\Release\WorldClient.lib;..\..\lib\Release\WowServices.lib;..\..\lib\Release\WowSvcs.lib;..\..\lib\Release\lzma.lib;..\..\lib\Release\XvidDecoder.lib;..\..\lib\Release\expat.lib;d3d9.lib;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\ThirdParty\nvapi\amd64\nvapi64.lib;opengl32.lib;..\..\lib\Release\jpeg.lib;imm32.lib;wininet.lib;dinput8.lib;dxguid.lib;version.lib;..\..\lib\Release\fmodex.lib;winmm.lib;msacm32.lib;hid.lib;setupapi.lib;..\..\lib\Release\blast.lib;..\..\lib\Release\zlib.lib;..\..\lib\Release\bzip2.lib;..\..\lib\Release\freetype.lib;..\..\lib\Release\pcreposix.lib;..\..\lib\Release\pcre.lib;ws2_32.lib;wsock32.lib;..\..\lib\Release\lgLcd.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <EntryPointSymbol>start</EntryPointSymbol>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <GenerateMapFile>true</GenerateMapFile>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>D:/WoWClient/PLUS PB Client/WoWDecomp/wowdecomp/build/sym/lib/Release/Wow64.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <MapExports>true</MapExports>
+      <ProgramDataBaseFile>D:/WoWClient/PLUS PB Client/WoWDecomp/wowdecomp/bin/Win/Wow64.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\ThirdParty\zlib\contrib\blast;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\ThirdParty\lzma;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\ThirdParty\zlib;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\ThirdParty\DivxDecoder;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\ThirdParty\freetype\include;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\Engine\Source\lua-5.1\src;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\ThirdParty\expat\lib;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\Engine\Source\SoundEngine\fmodex\src;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\ThirdParty\bzip2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;WOWDECOMP_ARCH_64=1;NOMINMAX;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_WARNINGS;DISABLE_SIGNATURE_CHECKS=1;_STATIC;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;WOWDECOMP_ARCH_64=1;NOMINMAX;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_WARNINGS;DISABLE_SIGNATURE_CHECKS=1;_STATIC;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\ThirdParty\zlib\contrib\blast;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\ThirdParty\lzma;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\ThirdParty\zlib;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\ThirdParty\DivxDecoder;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\ThirdParty\freetype\include;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\Engine\Source\lua-5.1\src;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\ThirdParty\expat\lib;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\Engine\Source\SoundEngine\fmodex\src;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\ThirdParty\bzip2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\ThirdParty\zlib\contrib\blast;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\ThirdParty\lzma;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\ThirdParty\zlib;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\ThirdParty\DivxDecoder;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\ThirdParty\freetype\include;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\Engine\Source\lua-5.1\src;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\ThirdParty\expat\lib;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\Engine\Source\SoundEngine\fmodex\src;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\ThirdParty\bzip2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\lib\MinSizeRel\BLPFile.lib;..\..\lib\MinSizeRel\Base.lib;..\..\lib\MinSizeRel\BlizzardCore.lib;..\..\lib\MinSizeRel\ComSat.lib;..\..\lib\MinSizeRel\ConsoleBase.lib;..\..\lib\MinSizeRel\Event.lib;..\..\lib\MinSizeRel\FFX.lib;..\..\lib\MinSizeRel\Frame.lib;..\..\lib\MinSizeRel\FrameScript.lib;..\..\lib\MinSizeRel\lua.lib;..\..\lib\MinSizeRel\FrameXML.lib;..\..\lib\MinSizeRel\Gx.lib;..\..\lib\MinSizeRel\Gxu.lib;..\..\lib\MinSizeRel\Images.lib;..\..\lib\MinSizeRel\Model2.lib;..\..\lib\MinSizeRel\Os.lib;..\..\lib\MinSizeRel\Scrn.lib;..\..\lib\MinSizeRel\Services.lib;..\..\lib\MinSizeRel\ShaderEffect.lib;..\..\lib\MinSizeRel\Tempest.lib;..\..\lib\MinSizeRel\SoundEngine.lib;..\..\lib\MinSizeRel\SteelseriesMouse.lib;..\..\lib\MinSizeRel\Storm.lib;..\..\lib\MinSizeRel\WoWCommon.lib;..\..\lib\MinSizeRel\Battlenet.lib;..\..\lib\MinSizeRel\Console.lib;..\..\lib\MinSizeRel\ConsoleDevice.lib;..\..\lib\MinSizeRel\DB.lib;..\..\lib\MinSizeRel\Game.lib;..\..\lib\MinSizeRel\Glue.lib;..\..\lib\MinSizeRel\LiquidSystem.lib;..\..\lib\MinSizeRel\Magic.lib;..\..\lib\MinSizeRel\Minigame.lib;..\..\lib\MinSizeRel\Net.lib;..\..\lib\MinSizeRel\Object.lib;..\..\lib\MinSizeRel\ObjectAlloc.lib;..\..\lib\MinSizeRel\ObjectMgrClient.lib;..\..\lib\MinSizeRel\SoundInterface.lib;..\..\lib\MinSizeRel\UIUtil.lib;..\..\lib\MinSizeRel\Ui.lib;..\..\lib\MinSizeRel\WorldClient.lib;..\..\lib\MinSizeRel\WowServices.lib;..\..\lib\MinSizeRel\WowSvcs.lib;..\..\lib\MinSizeRel\lzma.lib;..\..\lib\MinSizeRel\XvidDecoder.lib;..\..\lib\MinSizeRel\expat.lib;d3d9.lib;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\ThirdParty\nvapi\amd64\nvapi64.lib;opengl32.lib;..\..\lib\MinSizeRel\jpeg.lib;imm32.lib;wininet.lib;dinput8.lib;dxguid.lib;version.lib;..\..\lib\MinSizeRel\fmodex.lib;winmm.lib;msacm32.lib;hid.lib;setupapi.lib;..\..\lib\MinSizeRel\blast.lib;..\..\lib\MinSizeRel\zlib.lib;..\..\lib\MinSizeRel\bzip2.lib;..\..\lib\MinSizeRel\freetype.lib;..\..\lib\MinSizeRel\pcreposix.lib;..\..\lib\MinSizeRel\pcre.lib;ws2_32.lib;wsock32.lib;..\..\lib\MinSizeRel\lgLcd.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <EntryPointSymbol>start</EntryPointSymbol>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <GenerateMapFile>true</GenerateMapFile>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>D:/WoWClient/PLUS PB Client/WoWDecomp/wowdecomp/build/sym/lib/MinSizeRel/Wow64.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <MapExports>true</MapExports>
+      <ProgramDataBaseFile>D:/WoWClient/PLUS PB Client/WoWDecomp/wowdecomp/bin/Win/Wow64.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\ThirdParty\zlib\contrib\blast;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\ThirdParty\lzma;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\ThirdParty\zlib;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\ThirdParty\DivxDecoder;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\ThirdParty\freetype\include;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\Engine\Source\lua-5.1\src;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\ThirdParty\expat\lib;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\Engine\Source\SoundEngine\fmodex\src;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\ThirdParty\bzip2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;WOWDECOMP_ARCH_64=1;NOMINMAX;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_WARNINGS;DISABLE_SIGNATURE_CHECKS=1;_STATIC;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;WOWDECOMP_ARCH_64=1;NOMINMAX;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_WARNINGS;DISABLE_SIGNATURE_CHECKS=1;_STATIC;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\ThirdParty\zlib\contrib\blast;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\ThirdParty\lzma;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\ThirdParty\zlib;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\ThirdParty\DivxDecoder;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\ThirdParty\freetype\include;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\Engine\Source\lua-5.1\src;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\ThirdParty\expat\lib;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\Engine\Source\SoundEngine\fmodex\src;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\ThirdParty\bzip2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\ThirdParty\zlib\contrib\blast;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\ThirdParty\lzma;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\ThirdParty\zlib;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\ThirdParty\DivxDecoder;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\ThirdParty\freetype\include;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\Engine\Source\lua-5.1\src;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\ThirdParty\expat\lib;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\Engine\Source\SoundEngine\fmodex\src;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\ThirdParty\bzip2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\lib\RelWithDebInfo\BLPFile.lib;..\..\lib\RelWithDebInfo\Base.lib;..\..\lib\RelWithDebInfo\BlizzardCore.lib;..\..\lib\RelWithDebInfo\ComSat.lib;..\..\lib\RelWithDebInfo\ConsoleBase.lib;..\..\lib\RelWithDebInfo\Event.lib;..\..\lib\RelWithDebInfo\FFX.lib;..\..\lib\RelWithDebInfo\Frame.lib;..\..\lib\RelWithDebInfo\FrameScript.lib;..\..\lib\RelWithDebInfo\lua.lib;..\..\lib\RelWithDebInfo\FrameXML.lib;..\..\lib\RelWithDebInfo\Gx.lib;..\..\lib\RelWithDebInfo\Gxu.lib;..\..\lib\RelWithDebInfo\Images.lib;..\..\lib\RelWithDebInfo\Model2.lib;..\..\lib\RelWithDebInfo\Os.lib;..\..\lib\RelWithDebInfo\Scrn.lib;..\..\lib\RelWithDebInfo\Services.lib;..\..\lib\RelWithDebInfo\ShaderEffect.lib;..\..\lib\RelWithDebInfo\Tempest.lib;..\..\lib\RelWithDebInfo\SoundEngine.lib;..\..\lib\RelWithDebInfo\SteelseriesMouse.lib;..\..\lib\RelWithDebInfo\Storm.lib;..\..\lib\RelWithDebInfo\WoWCommon.lib;..\..\lib\RelWithDebInfo\Battlenet.lib;..\..\lib\RelWithDebInfo\Console.lib;..\..\lib\RelWithDebInfo\ConsoleDevice.lib;..\..\lib\RelWithDebInfo\DB.lib;..\..\lib\RelWithDebInfo\Game.lib;..\..\lib\RelWithDebInfo\Glue.lib;..\..\lib\RelWithDebInfo\LiquidSystem.lib;..\..\lib\RelWithDebInfo\Magic.lib;..\..\lib\RelWithDebInfo\Minigame.lib;..\..\lib\RelWithDebInfo\Net.lib;..\..\lib\RelWithDebInfo\Object.lib;..\..\lib\RelWithDebInfo\ObjectAlloc.lib;..\..\lib\RelWithDebInfo\ObjectMgrClient.lib;..\..\lib\RelWithDebInfo\SoundInterface.lib;..\..\lib\RelWithDebInfo\UIUtil.lib;..\..\lib\RelWithDebInfo\Ui.lib;..\..\lib\RelWithDebInfo\WorldClient.lib;..\..\lib\RelWithDebInfo\WowServices.lib;..\..\lib\RelWithDebInfo\WowSvcs.lib;..\..\lib\RelWithDebInfo\lzma.lib;..\..\lib\RelWithDebInfo\XvidDecoder.lib;..\..\lib\RelWithDebInfo\expat.lib;d3d9.lib;D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\ThirdParty\nvapi\amd64\nvapi64.lib;opengl32.lib;..\..\lib\RelWithDebInfo\jpeg.lib;imm32.lib;wininet.lib;dinput8.lib;dxguid.lib;version.lib;..\..\lib\RelWithDebInfo\fmodex.lib;winmm.lib;msacm32.lib;hid.lib;setupapi.lib;..\..\lib\RelWithDebInfo\blast.lib;..\..\lib\RelWithDebInfo\zlib.lib;..\..\lib\RelWithDebInfo\bzip2.lib;..\..\lib\RelWithDebInfo\freetype.lib;..\..\lib\RelWithDebInfo\pcreposix.lib;..\..\lib\RelWithDebInfo\pcre.lib;ws2_32.lib;wsock32.lib;..\..\lib\RelWithDebInfo\lgLcd.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <EntryPointSymbol>start</EntryPointSymbol>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <GenerateMapFile>true</GenerateMapFile>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>D:/WoWClient/PLUS PB Client/WoWDecomp/wowdecomp/build/sym/lib/RelWithDebInfo/Wow64.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <MapExports>true</MapExports>
+      <ProgramDataBaseFile>D:/WoWClient/PLUS PB Client/WoWDecomp/wowdecomp/bin/Win/Wow64.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\WoW\Source\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/WoWClient/PLUS PB Client/WoWDecomp/wowdecomp/WoW/Source/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SD:/WoWClient/PLUS PB Client/WoWDecomp/wowdecomp" "-BD:/WoWClient/PLUS PB Client/WoWDecomp/wowdecomp/build/sym" --check-stamp-file "D:/WoWClient/PLUS PB Client/WoWDecomp/wowdecomp/build/sym/WoW/Source/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\build\sym\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\build\sym\WoW\Source\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/WoWClient/PLUS PB Client/WoWDecomp/wowdecomp/WoW/Source/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SD:/WoWClient/PLUS PB Client/WoWDecomp/wowdecomp" "-BD:/WoWClient/PLUS PB Client/WoWDecomp/wowdecomp/build/sym" --check-stamp-file "D:/WoWClient/PLUS PB Client/WoWDecomp/wowdecomp/build/sym/WoW/Source/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\build\sym\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\build\sym\WoW\Source\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/WoWClient/PLUS PB Client/WoWDecomp/wowdecomp/WoW/Source/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SD:/WoWClient/PLUS PB Client/WoWDecomp/wowdecomp" "-BD:/WoWClient/PLUS PB Client/WoWDecomp/wowdecomp/build/sym" --check-stamp-file "D:/WoWClient/PLUS PB Client/WoWDecomp/wowdecomp/build/sym/WoW/Source/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\build\sym\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\build\sym\WoW\Source\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/WoWClient/PLUS PB Client/WoWDecomp/wowdecomp/WoW/Source/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SD:/WoWClient/PLUS PB Client/WoWDecomp/wowdecomp" "-BD:/WoWClient/PLUS PB Client/WoWDecomp/wowdecomp/build/sym" --check-stamp-file "D:/WoWClient/PLUS PB Client/WoWDecomp/wowdecomp/build/sym/WoW/Source/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\build\sym\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\build\sym\WoW\Source\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\WoW\Source\Client.cpp" />
+    <ClCompile Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\WoW\Source\Client_CVar.cpp" />
+    <ClCompile Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\WoW\Source\Client_Console.cpp" />
+    <ClCompile Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\WoW\Source\Hardware.cpp" />
+    <ClCompile Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\WoW\Source\LoadingScreen.cpp" />
+    <ClCompile Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\WoW\Source\WowSysMessageOutput.cpp" />
+    <ClCompile Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\WoW\Source\Win64\BotCheck.cpp" />
+    <ClCompile Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\WoW\Source\Win64\WinMain.cpp" />
+    <ResourceCompile Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\waystone.rc" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\build\sym\ZERO_CHECK.vcxproj">
+      <Project>{02959A71-0DFF-3EDA-A8F0-B8F15C254A28}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\build\sym\Engine\Source\BLPFile\BLPFile.vcxproj">
+      <Project>{8DC6E315-01FB-3A48-8116-14B5A1D8E0D5}</Project>
+      <Name>BLPFile</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\build\sym\Engine\Source\Base\Base.vcxproj">
+      <Project>{85ADCAEB-FC57-369A-A444-3F11FC793E3D}</Project>
+      <Name>Base</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\build\sym\WoW\Source\Battlenet\Battlenet.vcxproj">
+      <Project>{8E7ACE9D-2ABF-3B1F-AC35-7216E29C8702}</Project>
+      <Name>Battlenet</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\build\sym\Engine\Source\BlizzardCore\BlizzardCore.vcxproj">
+      <Project>{6421569A-F788-3476-BF5F-E36B730E653D}</Project>
+      <Name>BlizzardCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\build\sym\Engine\Source\ComSat\ComSat.vcxproj">
+      <Project>{0D49DB9A-FE19-3E92-A2E0-E534B52C83D1}</Project>
+      <Name>ComSat</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\build\sym\WoW\Source\Console\Console.vcxproj">
+      <Project>{9E50969F-9334-32A5-8E07-665A8E097548}</Project>
+      <Name>Console</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\build\sym\Engine\Source\ConsoleBase\ConsoleBase.vcxproj">
+      <Project>{2EFF6179-96AD-356D-95FB-1EE46404B37D}</Project>
+      <Name>ConsoleBase</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\build\sym\WoW\Source\ConsoleDevice\ConsoleDevice.vcxproj">
+      <Project>{2358102A-80F4-32F0-85C6-0581D9E4B993}</Project>
+      <Name>ConsoleDevice</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\build\sym\WoW\Source\DB\DB.vcxproj">
+      <Project>{42F795F8-7EA9-3C85-BA89-F468E591E8E3}</Project>
+      <Name>DB</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\build\sym\Engine\Source\Event\Event.vcxproj">
+      <Project>{74BBD40C-B1B1-3EAD-A157-B2B45FAA71F1}</Project>
+      <Name>Event</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\build\sym\Engine\Source\FFX\FFX.vcxproj">
+      <Project>{31F266DA-27E4-3A13-8C9D-FDE8C741FBCC}</Project>
+      <Name>FFX</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\build\sym\Engine\Source\Frame\Frame.vcxproj">
+      <Project>{138D4888-BE30-352A-A140-5AC83F7724AC}</Project>
+      <Name>Frame</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\build\sym\Engine\Source\FrameScript\FrameScript.vcxproj">
+      <Project>{59458835-A7D6-3714-A7D4-2563541BD0AF}</Project>
+      <Name>FrameScript</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\build\sym\Engine\Source\FrameXML\FrameXML.vcxproj">
+      <Project>{26926CE7-410C-3EA8-A1BD-8E9B9A25A9BA}</Project>
+      <Name>FrameXML</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\build\sym\WoW\Source\Game\Game.vcxproj">
+      <Project>{6770ED63-46C2-3070-BDF8-90AFA06465F5}</Project>
+      <Name>Game</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\build\sym\WoW\Source\Glue\Glue.vcxproj">
+      <Project>{63DA6EB0-0DF9-3D93-8C2C-60FEB349DFAB}</Project>
+      <Name>Glue</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\build\sym\Engine\Source\Gx\Gx.vcxproj">
+      <Project>{D59DCDEB-D881-36C9-80B1-B33858A43CE8}</Project>
+      <Name>Gx</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\build\sym\Engine\Source\Gxu\Gxu.vcxproj">
+      <Project>{9C5B9102-A1BF-303F-A92A-E00880789718}</Project>
+      <Name>Gxu</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\build\sym\Engine\Source\Images\Images.vcxproj">
+      <Project>{F445F2CB-EA62-3265-9B14-645988D8C658}</Project>
+      <Name>Images</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\build\sym\WoW\Source\LiquidSystem\LiquidSystem.vcxproj">
+      <Project>{30CD920D-509D-3E0E-9467-91A2BEEF36D9}</Project>
+      <Name>LiquidSystem</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\build\sym\WoW\Source\Magic\Magic.vcxproj">
+      <Project>{E2A0DB71-5496-3C38-83B8-D453584C7294}</Project>
+      <Name>Magic</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\build\sym\WoW\Source\Minigame\Minigame.vcxproj">
+      <Project>{E48FAE66-AD66-3C0F-8367-C560F4954484}</Project>
+      <Name>Minigame</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\build\sym\Engine\Source\Model2\Model2.vcxproj">
+      <Project>{A69D549D-3D7E-3023-B270-5EFD472734A5}</Project>
+      <Name>Model2</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\build\sym\WoW\Source\Net\Net.vcxproj">
+      <Project>{58EC624B-6654-337A-8E34-0B860FA5161E}</Project>
+      <Name>Net</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\build\sym\WoW\Source\Object\Object.vcxproj">
+      <Project>{3A2F9B03-261B-3D8E-9F6D-B4FD2883001E}</Project>
+      <Name>Object</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\build\sym\WoW\Source\ObjectAlloc\ObjectAlloc.vcxproj">
+      <Project>{14EAC2AE-FA0F-3924-9762-5CA28F131B25}</Project>
+      <Name>ObjectAlloc</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\build\sym\WoW\Source\ObjectMgrClient\ObjectMgrClient.vcxproj">
+      <Project>{C6E07279-C493-305C-A869-6397E5AE281D}</Project>
+      <Name>ObjectMgrClient</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\build\sym\Engine\Source\Os\Os.vcxproj">
+      <Project>{F6862E65-BB3F-3C14-8B4B-08191FCDDB7C}</Project>
+      <Name>Os</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\build\sym\Engine\Source\Scrn\Scrn.vcxproj">
+      <Project>{0BD47822-1699-3B6C-81AE-737B50770872}</Project>
+      <Name>Scrn</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\build\sym\Engine\Source\Services\Services.vcxproj">
+      <Project>{393B99C0-2242-32BB-8950-67B58E7EFCA3}</Project>
+      <Name>Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\build\sym\Engine\Source\ShaderEffect\ShaderEffect.vcxproj">
+      <Project>{CEB1DE74-50AB-3F51-B5E2-1788E8CD9631}</Project>
+      <Name>ShaderEffect</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\build\sym\Engine\Source\SoundEngine\SoundEngine.vcxproj">
+      <Project>{6B99FD1E-CA0B-33DF-AB6A-2F64EDB19852}</Project>
+      <Name>SoundEngine</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\build\sym\WoW\Source\SoundInterface\SoundInterface.vcxproj">
+      <Project>{320DFFA3-D5E0-3C44-8AE3-CA142D98EBFC}</Project>
+      <Name>SoundInterface</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\build\sym\Engine\Source\SteelseriesMouse\SteelseriesMouse.vcxproj">
+      <Project>{2343DDBC-586C-33EB-B4DC-BDB6AF815CE6}</Project>
+      <Name>SteelseriesMouse</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\build\sym\Engine\Source\Storm\Storm.vcxproj">
+      <Project>{84E1D9B3-6C8B-31AB-B1C4-ACC75B6EB189}</Project>
+      <Name>Storm</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\build\sym\Engine\Source\Tempest\Tempest.vcxproj">
+      <Project>{C5F42CF5-3E19-3D4C-9950-15F8E3475872}</Project>
+      <Name>Tempest</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\build\sym\WoW\Source\UIUtil\UIUtil.vcxproj">
+      <Project>{2824F164-4053-3E87-A81E-9EA32134866C}</Project>
+      <Name>UIUtil</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\build\sym\WoW\Source\Ui\Ui.vcxproj">
+      <Project>{320CBA19-07D4-33E1-862E-49F3679304B5}</Project>
+      <Name>Ui</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\build\sym\WoW\Common\WoWCommon.vcxproj">
+      <Project>{44C0CFA5-D232-366F-B913-8757EED50752}</Project>
+      <Name>WoWCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\build\sym\WoW\Source\WorldClient\WorldClient.vcxproj">
+      <Project>{F0C99847-EE8D-38DE-B240-A1538DDEEDCB}</Project>
+      <Name>WorldClient</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\build\sym\WoW\Source\WowServices\WowServices.vcxproj">
+      <Project>{815BFAA7-9916-354D-AF8F-C13A8C661D76}</Project>
+      <Name>WowServices</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\build\sym\WoW\Source\WowSvcs\WowSvcs.vcxproj">
+      <Project>{078038AF-AC68-3E61-BCB5-44DCF81F59D1}</Project>
+      <Name>WowSvcs</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\build\sym\Tools\XvidDecoder\XvidDecoder.vcxproj">
+      <Project>{E9AAAEF4-F993-3E6B-8D7F-DCFAED79A7BD}</Project>
+      <Name>XvidDecoder</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\build\sym\ThirdParty\blast.vcxproj">
+      <Project>{0020CC04-3C9A-377F-A15C-D0D2CF6EF54E}</Project>
+      <Name>blast</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\build\sym\ThirdParty\bzip2.vcxproj">
+      <Project>{482E59CB-D434-337A-8ABC-EC927783135C}</Project>
+      <Name>bzip2</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\build\sym\ThirdParty\expat.vcxproj">
+      <Project>{C88FEB1E-9932-3CCF-B41C-0DC496605849}</Project>
+      <Name>expat</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\build\sym\Engine\Source\SoundEngine\fmodex.vcxproj">
+      <Project>{166285E3-AC54-32F9-92DD-5E47376207AE}</Project>
+      <Name>fmodex</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\build\sym\ThirdParty\freetype.vcxproj">
+      <Project>{038ED9CD-6AD3-3263-9439-F31E52F9EBE2}</Project>
+      <Name>freetype</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\build\sym\Engine\Source\jpeg\jpeg.vcxproj">
+      <Project>{5EF9949A-8C58-3825-A8A8-A138C2B82847}</Project>
+      <Name>jpeg</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\build\sym\ThirdParty\lgLcd.vcxproj">
+      <Project>{415671CE-2A2A-3B36-9543-0D53B0B92DBE}</Project>
+      <Name>lgLcd</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\build\sym\Engine\Source\lua-5.1\lua.vcxproj">
+      <Project>{D7523A4A-63D9-3F41-BD79-C44E0097D697}</Project>
+      <Name>lua</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\build\sym\ThirdParty\lzma.vcxproj">
+      <Project>{7B297C6C-4825-3C86-92C4-376CD093358B}</Project>
+      <Name>lzma</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\build\sym\ThirdParty\pcre.vcxproj">
+      <Project>{AF1E7EB3-EE0B-32F8-9B89-66404C75F44F}</Project>
+      <Name>pcre</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\build\sym\Engine\Source\pcre\pcreposix.vcxproj">
+      <Project>{1CBB5DE3-0217-3FE0-819A-8B01F48E2BC4}</Project>
+      <Name>pcreposix</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\build\sym\ThirdParty\zlib.vcxproj">
+      <Project>{9B5C4DA6-D8DD-3FEC-B220-083DCCA908DC}</Project>
+      <Name>zlib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

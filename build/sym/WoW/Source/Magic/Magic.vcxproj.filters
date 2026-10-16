@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\WoW\Source\Magic\MagicClient\ItemCooldowns.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\WoW\Source\Magic\MagicClient\SpellTable.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\WoW\Source\Magic\MagicClient\SpellVisuals.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\WoW\Source\Magic\MagicClient\SpellVisuals_CVar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\WoW\Source\Magic\MagicClient\Spell_C.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\WoW\Source\Magic\MagicClient\Spell_C_Scripts.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\WoW\Source\Magic\Spell.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\WoW\Source\Magic\SpellCast.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\WoWClient\PLUS PB Client\WoWDecomp\wowdecomp\WoW\Source\Magic\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{6BA50A9B-49D0-351A-A8AA-B1134B15E4DB}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

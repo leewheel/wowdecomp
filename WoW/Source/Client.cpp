@@ -1362,7 +1362,12 @@ static void OpenArchives() {
 
     int32_t priority = 64;
     uint32_t slot = 0;
-    s_archiveHandles.SetCount(64);
+    // FIX (2026-10-16): 64 slots is not enough. slot grows in four loops below:
+    // patch files + direct type-3 archives + NESTED patches (patchCount * 28,
+    // enabled for zh locales) + base archives. Overflow wrote past the buffer
+    // and corrupted the heap -> crash in SetCount/SMemFree (read 0x0).
+    // Upper bound: Count*29 + 84 (+16 headroom).
+    s_archiveHandles.SetCount(patches.m_files.Count() * 29 + 100);
 
     for (uint32_t i = patches.m_files.Count(); i; i--) {
         if (SFile::OpenArchive(patches.m_files[i - 1], priority, 0xC00, &s_archiveHandles[slot])) {
